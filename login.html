@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+        background-color: #f5f5f5;
+        }
+        #navbar{
+           width:100%;
+           height:90px;
+           /* background-color: white; */
+           box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+        #img{
+            width: 15%;
+            padding-left: 12%;
+            height: 90px;
+            background-color: #f5f5f5;
+        }
+        p{
+            margin-top: -75px;
+            padding-left: 15px;
+            color:grey;
+        }
+        #signin>input{
+            display: block;
+        }
+        #body{
+            border:0px solid red;
+            width: 30%;
+            margin: auto;
+            line-height:150px;
+            margin-top: 60px;
+            background-color:white  ;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            
+        }
+        h3~input{
+            margin: 20px 30px;
+            width: 80%;
+            padding: 10px 0px;
+            padding-left: 2%;
+            border:1px solid #f2f2f2;
+            font-size: 17px;
+            /* color:#f2f2f2; */
+            outline: none;
+        }
+        h3+input{
+            margin-top: -40px;
+        }
+        h3{
+            text-align: center;
+            font-size: 30px;
+            color: #ff5030;
+            margin-top: -20px;
+        }
+        button{
+            width:83%;
+            display: block;
+            margin: auto;
+            padding: 10px 20px;
+            margin-left: 30px;
+            background-color: #ff5030;
+            border: none;
+            color:azure;
+            font-size: 20px;
+            border-radius: 4px;
+        }
+        p{
+            width: 50%;
+            border: 0px solid red;
+            margin-left: 20px;
+            margin-top: -35px;
+            color:grey;
+        }
+        p:hover{
+            color:orange;
+        }
+        #img2{
+            width:80%;
+            margin-left: 30px;
+            /* margin-top: -80px; */
+        }
+        #img2:hover{
+            /* background-color: grey; */
+            width:85%;
+           
+
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <a href="index.html"> <img id="img" src="https://mma.prnewswire.com/media/1762899/Banggood_Logo.jpg?p=facebook" alt=""> </a>
+       
+    </div>
+    <div id="body">
+    <div id="signin">
+        <h3>SIGN IN</h3>
+        <input id="mail" type="text" placeholder="Email">
+        <input id="pass" type="password" placeholder="Password">
+        <button>Sign in</button>
+        <p>Forgot Password?</p>
+        <a  href="https://mail.google.com/mail/?tab=rm&authuser=0&ogbl" target="_blank"> <img id="img2" src="https://i.ibb.co/B4dkm36/Screenshot-148.png" alt=""></a>
+    </div>   
+    
+    </div>
+</body>
+</html>
+<script>
+   signUpArr=JSON.parse(localStorage.getItem("Userdetails"))
+
+   document.querySelector("button").addEventListener("click",myFunction)
+
+   function myFunction(){
+    signinObj={
+    Mail:document.querySelector("#mail").value,
+    Password:document.querySelector("pass").value
+   }
+   
+   let display="Wrong Credential";
+   signUpArr.forEach(function(el){
+    if(el.email==signinObj.Mail && el.password==signinObj.Password){
+        display="Login Sucessful";
+        window.location.href="index.html";
+    }
+   })
+   alert(display);
+
+   }
+
+   
+</script>
