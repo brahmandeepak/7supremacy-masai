@@ -328,7 +328,7 @@ child.append(div)
     let price=document.createElement("p")
     price.innerText=ele.price
 	let original=document.createElement("span")
-	original.innerText=ele.originalPric
+	original.innerText=ele.originalPrice
     let off=document.createElement("span")
     off.innerText=ele.off
     let name=document.createElement("p")
@@ -356,6 +356,7 @@ child.append(div)
 	alert("Added to Cart")
 	localStorage.setItem("addToCart",JSON.stringify(phonesData))
  }
+
  let boodata=JSON.parse(localStorage.getItem("loginDetail")) || [];
     if(boodata.length>0){
         document.querySelector("#sign-in").innerText=boodata[0].email;
