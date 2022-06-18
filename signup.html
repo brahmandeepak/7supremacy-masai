@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #links {
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+            width: 90%;
+            height: 70px;
+            margin: auto;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-around;
+            font-size: x-large;
+        }
+
+        #links>div {
+            margin-top: 8px;
+            color: #fb8b24;
+
+        }
+
+
+        form {
+            width: 25%;
+            margin-left: 35%;
+            margin-top: 50px;
+            padding: 30px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        }
+
+        input[type=submit] {
+            border-color: white;
+            border-radius: 10px;
+            font-size: 20px;
+            width: 100%;
+            color: aliceblue;
+            background-color: #fb8b24;
+        }
+
+        input {
+            width: 96%;
+            margin: 10px 10px 10px 0;
+            padding: 10px 5px;
+            font-size: 13px;
+            border-radius: 3px;
+            border-color: whitesmoke
+        }
+
+        label {
+            font-size: larger;
+        }
+
+        input[type=submit]:hover {
+            background: #03045e;
+        }
+
+        p {
+            text-align: center;
+            font-size: 20px;
+            margin-top: -5px;
+            color: gray;
+        }
+
+        #contain {
+            margin: auto;
+            width: 90%;
+           height: auto;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        #contain>div {
+
+            width: 17%;
+            height: 40px;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+
+            background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="links">
+        <div>
+            <img src="https://mma.prnewswire.com/media/1762899/Banggood_Logo.jpg?p=facebook" alt="error">
+        </div>
+        <div><a href="signup.html">SignUp</a></div>
+        <div><a href="login.html">Login</a></div>
+    </div>
+
+    <form>
+        <label for="email">Email:</label><br />
+        <input type="text" id="email" placeholder="Enter Email Address"><br />
+        <label for="phone">Phone Number:</label><br />
+        <input type="number" id="phone" placeholder="Enter your contact Number"><br />
+        <label for="password">Password:</label><br />
+        <input type="password" id="password" placeholder="Enter your password"><br />
+        <input type="submit" value="SignUp">
+        <p>Quick access with</p>
+        <div id="contain">
+            <div>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHcAAAB6CAMAAACyeTxmAAABJlBMVEX////pQjU0qFNChfT6uwWAqvk5gfQzf/Tm7v690Pv6tgD6uQAwp1DpQDPpPC7/vADoOCklpEnn8+r63Nv98fD1sKz7wADoNjff8OPy+fT86ejrUkfoLBnoMSD4+v8QoT/sYlnudGzxj4nrST3nHQD4zszoJhD3phX/+vD7viX/9OD+8NL81IX95rj93Zb+35/94qpglvbd5/1DrV7R6NbC4cn3v7vynZjsWlD0pqHue3Txh4DtZmX1jwD80HHrVTDubSvyiCPweif1lh37xUjsTQn7xTrQ3vz8zFwhd/RJozXQtiaExZOauvmmsjh5rUWaz6beuB9Uqk3BtTCPsD+txvpmvYax2rpjuXMml5A1o3BAiec/kM4/mrA3n4kxpWI7k7yEsOVV1wY9AAAFRElEQVRoge2YaXvaRhDHhSyDDZLQIkwNSBaHIT5ip7E4fLTunYRGaUlaY9I2Pb7/l+iKW2J2pV1J+Hla/i/8xqCf5j8zO7MIwlZbbbXVZlSs6FNVipsi6r1+vVZtKupEqep1/e5AryQL1W/qVcPQVFVZkaqZbaXW6CUVud64NkxVSUHCcEO5TQBdvKkeazBzyTbMhh4rtXJnmHToDK0d11pxUgNCXZFqXMdDLjY0LSx0SjbrMbjda4Zy2CNNvYlIrdyyU7EUsxapo1sKm8VLqWaPH9s/5gl2FrLR4MXWDG6qK7PGdYxUqrwez6VVOepab6oRsdjqA2ZsKxUda7JjdeVJsJXo0aY4TBZiwLY5sLWolZxKHXNgG2bAQ90p324bhvvHhEYVTyULPfpxoWjt6m2/hze6It7uWgeNmmn4thAubKVJORwVzaz1dd85VOnV1dXxwVPJglCnJFdTb+GhXukvxyUftkdOLnWg4/Vg1gQ8JgvFFNFlrUlfYPTa5JV5GkgQ7kguK+27wC/32wpXA+E8kVwON8dbKl+0wheEg0pthhtpOh/2/EsCtprsBei+9Oyrz6Bok8WeZaVS7us1sKIlfN27zEmSVPrGD27Hd/WAJblcqfTMCzb7CWMvstJEJWk1yep1wljhPifNVPp2AVa0eK+W6zo5XXCl0ncbc1k4z0pLzRtKaSb+w8nznLQKnjaUGfVmF6zvPdxpQympxMM9k/zCDaUFD6Go8qR37vUPSRezILzIrXEl6RXtG6932fQafMobgJt7TuPuD9IsyuyCT/GXlavsBZWb2WHSS+ghJ68g7kmc3J0j4CHr5YxtPqVh2bl7wEPOofS+iZWbvgrLpZYVOxcq6Iv19pWyl7FyM/thuS82wIXK+fP/MPepfH6iutpAH4XnxntugFzwnJRi5YLnxgbmAnhOCiA31jkIc8G5fx8nF5yD4J6TO6UZvT/IEAVhwbkP7XV56ccOhXu0RxZkM8xdL+j8Wxk5FC7tlQbr3Mw7+LO+BSuX/0kURbnAxYVSD7av4L+n5KWfMVZEQy7ubhrgguXsS3D+/QcXK8o2T8BHYFmB5ey9h+Z/EWfiyvADYHMaXp+FlXt3Lv+ruBA6ZMYevQTCzTyQPj4fhXnpwxKLnWbm7gPVTEwv1tTo/HvRI2anwewS04t1mZ23j0dWl437Djqt0oTudXWSnbePL2KmFO8DPUS1GVfWvH28YmqmK9BlwuE809lbgMoGPtqBwyVW80QjmQCWaQNiRXswdidDripXhxbMFWX0GAZ7RcDSqmoiBxHAojUKxj5AjetqQA9XEMo2wWlc1WJAPx2OP6YJ4RLPyIW6xICx12NKlgsOktFvv4ObRjooXKwRGeySu2XwWx1HRBNP/oAmb1B2J+9NdtolW7bT8aHLneEYofn/PwHgEOFip0k1PY/ZEkfDx27BVaf76IxlC628qvWnv6Yz8A9XaxrSwRM2smZCyG8P+subZMLvVoDGlBSHkGz9vdpPlEHkFzXFIWR9zCy8hm8JsChdHE7LhhoQtkhYh5HBs4Ya0OdB/GAZfcKHV/iaig3sNhQ71j0/olW121D/sGOxRoF9HBAw5+UKHyARvJYR4zq4og6/18hm3/eXKjtrx2C4YC0Hnluh1eUJGdn8Hi9CHsqMZISGEYOdkR2LgYwsJ0pmPSoMUbjSxsPZ4fuFgKTu2AoqMQy143HYo4K7zZDYMoaOhyGXe3b0o2Mjd8WQ5QVPdpcPNB4NY8sqqHKhg1cq254iRdsej5zHTiF+e2F6uXDoqrAp4FZbbfW/179wN6bIyeplrwAAAABJRU5ErkJggg=="
+                    alt="error">
+            </div>
+            <div>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHcAAABhCAMAAADbaM4+AAAAYFBMVEUdofL///8AnPEAmvEUn/L7/v8AmPHh8f33/P/R6fzY7fzs9/6Fx/c8q/Or1/krpvO13PpSsfSc0PiezfjG4/tjufWUzvik1Pm84Pp5wvZetvWOyfduvvYAkvBwuvVLrvSrw86xAAAE2ElEQVRogb2a6baqOgyASxqkWKDAxs2gV97/LQ+TbIYypJabtfyl8Jk2Yxvm2BR5j/L0J80LTxz8klljulkZcg4A2HxurIrk/8GVTwbIJtLQH772p4VnjSsCnFMHdLUm+1XoTrnuF9gshBV0IJezjXb9N9wiZ8p93Y2xvxvUViD8e6+Mao5MiSnXB7VrB9viPnawjcqY9dD43VkAdOqO3AdifWT7WhHJLrZVORZ+njTQ1gIwcadcyZBBZcKtjrDNm9Wf1cFgaQM3b5+GBx37PsR25FH31Jlxq+4reFOx0RnsZMlfnwd7rlT9X6Jq7LG11+5hx510e64/fpOQjOtBww7aukXi9dx4XC6oCe6UcQqWPztoVqr/omGd079tQqaPqjpJKOqGhSPu0Qub1PH67G8wNQ+MT2J90io/g0pB609doOi55ewNvDwXrAOSMSP2EAzbnRy48zdAciZYi5CCHfGsTYO6de7+W37MvdN89yN9uF7Z1QDWpc6FrB46pW2PdZZ+NFH5eeDKb5JZDdiPNj03070CVLRnX25Cxyrv8/QQJ/XxDhqf2xShqPpOY9IsL6z/IKjMGheCydMDd7tU4eHGalO58Jw+PXD3fAIw8GxwfzXc3VCLwJN8hRahDW6x74xNoVKn3mzBqfas5x7nFoRbWMZ3OcKJ/rvBzU4VSoAqKX9j35Nit2zWcVMtd5kbNtHYdD5t+V0T0wLkei7NPukxksd6buNL9JdRuNkGl1gukbn+mpv3gTO+UmP01twEXllv1JeBkck1t0LkqiykI0klIomr3DW3q+uawHALq4uwDOdd36LOuW5/MdBwD6KzDZmHjYFL7K9MZO5GA9e9zJxGQaHhUmO8ATZxdFzvan3nVc70XOVaLs/0XP/ahR66ojX3YoWxcje43qUKz4uNKdfJr8yCsGxsJ/n3ypUOl7X/hEtveE7LvJZccMdTLPuCq6p/du4tt86Rv8WuTz7n5+3icUnBoTkhWpzzu+kVmUmtTw5W9wveG22Tl7FZy21C5gOsbvOiotvkNjr/0s8udrilBjHnSq9r91zhRcoeV9e1L7g3FiZJ03GBvU0GnbrLdX4Ba4k2LeumPVhecO2nYZ0xr7nWkwMy/anfkmtb4eGa6pB7tu0/KVjrsWuuqG2u9Crfb3Kdu02s3qi0XItNMG7fCuniZGSr0tpc5Y34XNjReMuWN7mOryxYtT5A7nId8eLfqozh3j3B5lyBX39LNp2jyBJunpYQNg/qj7hN/k9rBmBkZHBw2Xc0vyH9KH3SawB+dO91Ym5EvMgK82UbZsAt6D616v7oXPkiU/FwkQ+5bs7oAQR3wtQ5blzTbXm8eTTlijg08KDpPI4JV6YmVMYfJ+chtFwZJWatyglD3uIK/zcxC1EM1PlZKiZ94bpu05oIcS9+KgXcMPkiBMe4ib5Rs6RKMeA3/lUeCM/PfXTcbjjOkDZSkeW0Qbluf72SfVXZAAuow2qf+9/SIDB9qPr74VPcdgBSmeiMoAyoMz+ie217Ib0/FnqG28j9GZ5HQ6Oq8fDjMm4IPwiPPRgbTcMgMxpA1HMbcb38pdqySufM2A6+AnvlhxO/ZG4nMsvLRMGtm/CF9q4ZgPMbqPqdFiaGdJLbiZCeX8TtSPNPmkdxdpfyOy3/5B87MzU3bSOGTQAAAABJRU5ErkJggg=="
+                    alt="error">
+            </div>
+            <div>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHcAAAApCAMAAAA4Y0Y/AAAAbFBMVEVIZ6r///9FZan5+vw1WqQ6XaZBYqg9X6cyWKMtVaLw8ffq7fTl6PLK0eNnfrYpU6FddrK/x95XcrCYpsuHmMORoMjX3OrQ1ubFzOG3wNrd4e2os9JRba2hrc+Bk8Gxu9d2irwcTJ4ORpxuhLlApouHAAADVklEQVRYhe2V2bKjOAyGwXsMwSwBwpKQdN7/HVu/WPp0T5LD1HTV3EQXgLGsz5IlOYo+8pGPfOQ/ivg3unuVv1fUZhx3GnPK7FNUpPgeLKKjjOP4tMegSb1M1R5s76W3b1Wcj+O9XEuKqduheCBXvH6nYer4f+HagmxV97Dr3P4iVx/JVr4zSf8e1x7ALbUlslFIV2Mt+y6sck7z5/Y1c0lPr+Exm9KyRMHSxiVj9plPZTelZKubuky4uk2bOlymabCRcI+uSfszHbuNhpa+rk7M3B9Vkx5P7LUxF0zVjm27jJY0XeY2rj1NU3f9J1hk8SqZ7vld0Mu7yDTrf7UkXtxb5vYtj1ryxp6WKZ+Ty+q8jI5q4YoRwycN5AvXFMsHrUicWrE+XPmFYjsrG/+SyZrbNpAiUsU2OquZ65pXhZIXXQInu05gwZBdAUgODKuyrKoOOIdHCAO9Ruamt0fHO3WYKrIbAjXpHP/qrEYTygK4Dlaap2kobEB0RuUQsnMQ9gHuHXuvlRDGlgjc3dqArSuOmxEBsb4hin0QxnBcsLFKCT6W6Q4u4PH4olSWOrJYVlNIHHPhAieiwD6aYRguZGTgyQPlUwUI3KEUjBxrH2eIwEbbH6SdIirVq2b5lXv6jXvggPw6w4WL+uUmVyFEF7LLyWAQAraIjYILb5PwAvuG6zaunCW+bNzqK5fTx4KLa21cuSksX1/1wYXLHgyabifm4mdGS4RBuhROkBjDdRSTCwohvKIYzrSLQLkoHX7dqO1gowWfL7SleX++XFGyDJwxSYA/iTgEk2lEzCitDzYTzO3ugctvVJJT/Y5QtVwCqQ4aSX7ifGYrxYtrc+3PCvrxfCcmzkh++7i/T/hqi2MaN0v9Stai0cBLWJXaXcJL+LHUb+AafB7plbu2EJ8y97HmUrS1EModcOd2RbGhvR7XmYpOqJTxNrX0KxyS1E8jbQvvJe4jkwPQR633vYrMWMAr2ZZCVRwKmU7CeO+nDMO2hBuqxrdsHrh6jOiwxBfUGF1CVmykBzI+PC8lq/V8YQkV5aMSNIai0HbMS4PToUeel8LRbUG6xqgxF2p2gqbKch2QqTEfZ2t6tgrj39/sf3Zwsf0Q4re5r4M/Zr6FfOQjH/nIfvkJaaIsEa/B1HwAAAAASUVORK5CYII="
+                    alt="error">
+            </div>
+
+        </div>
+    </form>
+
+</body>
+
+</html>
+<script>
+    document.querySelector("form").addEventListener("submit", myfun)
+
+    let data = JSON.parse(localStorage.getItem("Userdetails")) || [];
+
+    function myfun(event) {
+        event.preventDefault();
+
+        let email = document.querySelector("#email").value;
+        let contact = document.querySelector("#phone").value;
+        let password = document.querySelector("#password").value;
+
+        let res = false;
+
+        if (data.length == 0) {
+            res = true;
+            let dataObj = {
+                email: email,
+                contact: contact,
+                password: password,
+
+            };
+            data.push(dataObj)
+        } else {
+            data.forEach(element => {
+                if (element.email == email) {
+                    res = false;
+                } else {
+                    res = true;
+                    let dataObj = {
+                        email: email,
+                        contact: contact,
+                        password: password,
+
+                    };
+                    data.push(dataObj);
+                }
+            });
+        }
+        if (res == true) {
+            alert("Data added Successfully,Now you can login");
+            localStorage.setItem("Userdetails", JSON.stringify(data));
+            location.href = "login.html";
+        } else {
+            alert("Enter different Email address");
+            location.href = "signup.html"
+        }
+    }
+</script>
