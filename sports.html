@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports page</title>
+    <link href="sports page" rel="stylesheet">
+    
+    <link rel="icon" href="https://www.banggood.in/favicon.ico" type="image/x-icon" />
+    <style>
+        body{
+    background-color: #f5f6f8;
+    background: linear-gradient(to top, white,white,white,#ffdbcc,#ffdbcc,white,white,white);
+}
+.clothing-women{
+    width:95%;
+    margin: auto;
+}
+.Wnav{
+   padding: auto;
+    /* border:solid  #f05720; */
+    justify-content: space-evenly;
+}
+.Wnav h3{
+    margin-left: 60px;
+    color:#f05720;
+    font-size:36px;
+    margin-bottom: 0px;
+
+}
+.Wnav span{
+    color:gray;
+    font-size: 20px;
+}
+.upper{
+    display:flex;
+    justify-content: space-evenly;
+}
+.upper image{
+    width:100%;
+
+}
+#list{
+    background-color:white;
+    /* border:solid red; */
+    width:15%;
+    box-shadow:  rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+}
+dl{
+    line-height: 30px;
+    color: gray;
+    
+   
+    /* background-color: aqua; */
+}
+a{
+    color:gray;
+    text-decoration: none;
+}
+dd:hover{
+     color:aqua;
+    background-color: #f05720;
+     margin-left:0px;
+    
+}
+#im{
+    width:70%;
+    box-shadow:  rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+}
+#im>img{
+    width:100%;
+}
+#container{
+    display: grid;
+    width:90%;
+    margin:Auto;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    margin-top:30px;
+    margin-bottom: 20px;
+
+    
+}
+#container>div{
+    padding: 10px;
+    background-color: #f5f6f8;
+}
+
+#container>div:hover{
+   box-shadow:  rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+}
+#container>div>img{
+    width:100%;
+    height:300px;
+}
+#container>div>h5{
+    color:gray;
+}
+#container>div>p{
+    color: #f05720;
+}
+#container>div>button{
+    background-color: #e89d82;
+    border:solid #f05720;
+    border-radius: 5px;
+}
+#container>div>button:hover{
+    background-color: #f05720;
+}
+
+#filter{
+    display: block;
+    margin-left:75%;
+    margin-bottom: 50px;
+    width:20%;
+    height:30px;
+    border-radius: 20px;
+    color:#f05720;
+    background-color: rgba(87, 84, 76, 0.159);
+    
+}
+#sel{
+    display:flex;
+    justify-content: space-between;
+    margin-right: 70px;
+}
+ #price_tag{
+    width:20%;
+    height:30px;
+    border-radius: 20px;
+    color:#f05720;
+    margin-bottom: 50px;
+    background-color: rgba(87, 84, 76, 0.159);
+    display: block;
+}
+/* header.................................................................... */
+.navbar{
+    margin: -10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #2d2d38;
+    /* background: linear-gradient(to top, white, #ffe7de,green); */
+    padding-left: 40px;
+    padding-right: 10px;
+  }
+.firstd{
+    width: 20%;
+    margin-left: 25px;
+    padding-left: 25px;
+    
+}
+#main-logo h1{
+    font-family: OpenSans, Arial;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    color: white;
+    font-size: 40px;
+    margin-left: 30px;
+
+}
+#main-logo span{
+    color: #f46a26;
+    font-family: Lato, Helvetica, Arial, sans-serif;
+}
+
+#main-logo p{
+    margin-top:-20px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    color: #656d78;
+    line-height: 24px;
+    font-family: OpenSans, Arial;
+    margin-left: 2px;
+    margin-left: 30px;
+
+}
+#category{
+    margin-bottom: 0px;
+    background-color: #3a3a44;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    width: 200px;
+    height: 35px;
+    margin-left: 30px;
+    
+}
+#category p{
+    padding: 8px 0.3px 0.2px 1px;
+    color: white;
+}
+#category p:hover{
+    padding: 8px 0.3px 0.2px 1px;
+    color: #f46a26;
+}
+#flow-1{
+    padding-left: 45px;
+    
+}#flow-0{
+    font-size: 18px;
+    padding-right: 5px;
+}
+#suggestion{
+    display: flex;
+    justify-content: space-between;
+    width: 480px;
+    height: 35px;
+    margin-left: 25px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+#suggestion p{
+    color: white;
+    padding: 8px 0.3px 0.2px 1px;
+}
+#suggestion p:hover{
+    color: #f46a26;
+}
+#myInput {
+    background-image: url('Images/searchicon.png.png');
+    background-position: 488px -8px;
+    background-repeat: no-repeat;
+    width: 520px;
+    font-size: 14px;
+    padding: 2px 10px 2px 10px;
+    border: none;
+    margin-bottom: 12px;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 5px;
+    border: none;
+  
+  }
+  .left-data{
+    align-items: center;
+    margin: 0px 10px 0px 5px;
+    width: 32%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    margin-left: 10px
+  }
+   /*--------------------------------------Login-page----------------------------- */
+  #tap-in{
+    display: flex;
+    justify-content: space-between;
+  }
+  #tap-in>img{
+    height: 42px;
+    margin-top: 7px;
+    border-radius: 4px;
+  }
+  #tap-in label{
+    margin-left: 10px;
+    margin-top: 10px;
+    color: #656d78;
+  }
+  #tap-in p{
+    color: white;
+    margin-left: -40px;
+    padding-top: 10px;
+    
+  }
+  #tap-in a{
+    text-decoration: none;
+  }
+  #tap-in p:hover{
+    color: #f46a26;
+  }
+
+
+
+  /*--------------cart------------------------------------- */
+
+.figure {
+    position: relative;
+}
+.image-main{
+  height: 50px;
+  width: 50px;
+  border-radius: 5px;
+}
+.image-hover{
+  height: 50px;
+  width: 50px;
+  border-radius: 5px;
+}
+.figure img.image-hover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity .2s;
+}
+.figure:hover img.image-hover {
+  opacity: 1;
+}
+
+#language{
+    background-color: #2d2d38;
+   
+
+}
+#lang{
+    background-color: #2d2d38;
+    border: none;
+     margin-left:25px;
+}
+#lang:hover{
+    color: #f46a26;
+}
+#search-bar{
+    width: 20%;
+    margin-left: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    position: relative;
+    height: 15.7cm;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+#footer-email{
+    border: none;
+    text-decoration: underline;
+}
+#main-log{
+color: #666666;
+}
+#m-logo{
+    font-weight: 700;
+    }
+#footer-end{
+    background-color: #f0f0f0;
+    
+}
+#footer-end>div{
+    margin: auto;
+}
+#footer-end>div>img{
+    width: 80%;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+    
+}
+#footer-beg{
+    background-color: #f0f0f0;
+    
+}
+#footer-beg>div{
+    margin: auto;
+}
+#footer-beg>div>img{
+    width: 80%;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+    
+}
+/* ............................sliding,,,,,,,,,,,,, */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+    </style>
+    
+</head>
+<body>
+    <!-- nav -->
+     <!-- navbar -->
+     <div class="navbar">
+        <div class="firstd">
+            <div onclick="location.href='index.html';" style="cursor: pointer;" id="main-logo" >
+                <h1>Ban<span>gg</span>ood</h1>
+                <p>Global leading online shop</p>
+            </div>
+            <div id="category"> 
+                <p style="font-weight: 700;"><span id="flow-0">≡ </span> CATEGORIES <span id="flow-1"> > </span>  </p> 
+            </div>
+        </div>
+  
+        <div class="center">
+            <div id="search-bar">
+                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="search here" title="Type in a name">
+            </div>
+            <div id="suggestion">
+                <p>XIOMI</p>
+                <p>GAME</p>
+                <p>TOY CAR</p>
+                <p>REMOTE</p>
+                <p>PHONE</p>
+                <p>CLOTHING</p>
+            </div>
+        </div>
+  
+        <div class="left-data">
+            <form action="#" id="language">
+                <label for="" style="color: #656d78;">Ship to</label><br>
+                <select name="LANGUAGE" id="lang" style="color: white;">
+                    <option value="Language">/ English (India) / INR</option>
+                </select>
+          </form>
+            
+  
+        <div id="tap-in">
+            <img src="https://i.stack.imgur.com/XmWSx.png" alt="">
+            <label for="">Hello</label>
+            <a href="">
+            <p>Sign in</p>
+            </a>
+        </div>
+  
+      
+        <div class="figure">
+            <a href="">
+            <img class="image-main" src="Images/Troley.png"  alt=""></a>
+            <a href="">
+            <img class="image-hover" src="data:image/png;base64,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"  alt=""></a>
+        </div>
+      
+        </div>
+  
+    </div>
+  
+    <!-- main......... -->
+    <div class="clothing-women">  
+        <div class="Wnav">
+            <h3>Sports and Outdoors<span>Latest & Comfy Items For You</span></h3> 
+         <div id="sel"><select name="" id="filter">
+            <option value="all">All Product</option>
+            <option value="running">Running</option>
+            <option value="gym">Gym Items</option>
+            <option value="cycling">Cycling</option>
+            <option value="sports wears">Sports Wears</option>
+            </select>
+            <select onchange="shortedPrice()" id="price_tag">
+                <option value="Common">Price</option>
+                <option value="Low">Low</option>
+                <option value="High">High</option>
+            </select></div>
+            
+    </div>
+      
+        <div class="upper">
+            <div id="list" >
+                <dl>
+                    <dd><a href="">Shooes</a></dd>
+                    <dd><a href="">Swimming Cloath</a></dd>
+                    <dd><a href="">Clycling</a></dd>
+                    <dd><a href="">Running Items</a></dd>
+                    <dd><a href="">Jogging Kit</a></dd>
+                    <dd><a href="">Plus Size</a></dd>
+                    <dd><a href="">Swimwear</a></dd>
+                    <dd><a href="">Sleepwear</a></dd>
+                    <dd><a href="">Active wear</a></dd>
+                    <dd><a href="">New Arrival</a></dd>
+                    <dd><a href="">Clearance</a></dd>
+                    <dd><a href="">Lingerie</a></dd>
+                </dl>
+            </div>
+            <!-- <div id="im"><img src="https://imgaz.staticbg.com/banggood/os/202201/20220106000635_678.jpg.webp" alt="upperIm"></div> -->
+            <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="https://imgaz.staticbg.com/banggood/os/202206/20220615004835_604.jpg" alt="upperIm" style="width:100%;height:400px">
+      <div class="text">Caption Text</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="https://imgaz1.staticbg.com/thumb/gallery/oaupload/banggood/images/5D/1D/27f73dbc-09be-45d6-8240-b306a86b0587.jpg.webp" alt="upperIm" style="width:100%;height:400px">
+      <div class="text">Caption Two</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="https://cdncontent.decathlon.in/_next/static/images/default-banner-image-f674b7a5307c3c588718c893f38905e7.png?format=auto&quality=70&f=1480x0" alt="upperIm" style="width:100%;height:400px">
+      <div class="text">Caption Three</div>
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+        </div>
+        <div class="Wnav">
+            <h3>Recommendations For You <span>customer</span></h3> 
+         
+         
+    </div>
+      
+        <div id="container"></div>
+        <!-- Append here -->
+        
+    </div>
+    <!-- footer -->
+    <div id="footer-beg">
+        <div>
+            <img src="Images/foot-beg.png" alt="">
+        </div>
+        
+    </div>
+<!--------------Footer-Beg DONE------------------------------------------------------------> 
+    <div class="footer">
+        <div id="first-foot">
+            <p onclick="location.href='index.html';" style="cursor: pointer;" id="m-logo">Get to Know Us</p><br>
+            <p onclick="location.href='index.html';" style="cursor: pointer;" id="main-log">Guarantees & Return Policy</p>
+            <p onclick="location.href='index.html';" style="cursor: pointer;" id="main-log">About Banggood.in</p>
+            <p onclick="location.href='index.html';" style="cursor: pointer;" id="main-log">Contact Us</p>
+            <p onclick="location.href='index.html';" style="cursor: pointer;" id="main-log">Help Center</p>
+            <p onclick="location.href='index.html';" style="cursor: pointer;" id="main-log">Site Map</p>
+            <p onclick="location.href='index.html';" style="cursor: pointer;" id="main-log">Intellectual Property Claims</p><br><br>
+            <p onclick="location.href='index.html';" style="cursor: pointer;" id="m-logo">Subscribe</p>
+            <p onclick="location.href='index.html';" style="cursor: pointer;" id="main-log">By subscribing you agree to receive email from us.<br>Please read our Privacy Policy</p><br><br>
+            <input type="email" name="Email" id="footer-email" placeholder="EMAIL ADDRESS">
+        </div>
+        <div id="second-foot">
+            <p onclick="location.href='index.html';" style="cursor: pointer;" id="m-logo">Payment & Shipping</p><br>
+            <p onclick="location.href='index.html';" style="cursor: pointer;" id="main-log">Payment Methods</p>
+            <p onclick="location.href='index.html';" style="cursor: pointer;" id="main-log">BGpay Instruction</p>
+            <p onclick="location.href='index.html';" style="cursor: pointer;" id="main-log">Shipping Guide</p>
+            <p onclick="location.href='index.html';" style="cursor: pointer;" id="main-log">Locations We Ship To</p>
+            <p onclick="location.href='index.html';" style="cursor: pointer;" id="main-log">Estimated Delivery Time</p><br>
+            <p onclick="location.href='index.html';" style="cursor: pointer;" id="m-logo">Partnership Programs</p>
+            <p onclick="location.href='index.html';" style="cursor: pointer;" id="main-log">Drop shipping</p>
+            <p onclick="location.href='index.html';" style="cursor: pointer;" id="main-log">Review Club</p>
+            <p onclick="location.href='index.html';" style="cursor: pointer;" id="main-log">Affiliate Program</p>
+            <p onclick="location.href='index.html';" style="cursor: pointer;" id="main-log">Wholesale Program</p>
+            <p onclick="location.href='index.html';" style="cursor: pointer;" id="main-log">Fashion Blogger Program</p>
+            
+        </div>
+        <div id="third-foot">
+            <p onclick="location.href='index.html';" style="cursor: pointer;" id="m-logo">Download App</p><br>
+            <div id="footer-dicon">
+                <img style="height: 50px; width: 50px;" src="https://www.jarir.com/cdn-cgi/image/fit=contain,width=400,height=auto,quality=100,metadata=none/https://wp-media.jarir.com/wp-content/uploads/2021/11/1-Apple-1.png" alt="">
+                <img style="height: 50px; width: 50px;" src="https://obs-tv.com/wp-content/uploads/2019/04/Android-TV-OBS-Icon.png" alt="">
+                <img  style="height: 50px; width: 100px; border-radius: 5px;" src="https://img.freepik.com/free-vector/template-scan-me-qr-code-smartphone-qr-code-mobile-app-payment-phone-viewfinder-grid-focus-button-vector-illustration_288189-324.jpg?w=2000" alt="">
+            </div><br>
+            <p onclick="location.href='index.html';" style="cursor: pointer;" id="m-logo">Follow Us</p><br>
+            <img style="height: 150px; width: 250px;"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI8c2cStFntFArlkiY0vT0q40H3SY8FBTRqg&usqp=CAU=" alt="">
+            <br>
+            <p onclick="location.href='index.html';" style="cursor: pointer;" id="main-log">Fashion Blogger Program <br>TERMS  PRIVACY  SPECIALIZED AFFAIRS</p>
+        </div>
+        
+
+
+
+    </div>
+<!--------------Footer DONE------------------------------------------------------------>
+    <div id="footer-end">
+        <div>
+            <img src="Images/footend.png" alt="">
+        </div>
+    </div>
+<!--------------Footer-end DONE------------------------------------------------------------>  
+</body>
+</html>
+<script src="sportsData.js">
+    // var womensData = JSON.parse(localStorage.getItem("womens_data"))
+    // console.log(womensData)
+    // displaydata(data);
+   
+  
+
+</script>
