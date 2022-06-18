@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Add cart Page </title>
+  <link rel="icon" href="https://www.banggood.in/favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="stylesachin.css">
 
   <style>
@@ -197,10 +198,10 @@
 <body>
     <div class="navbar">
         <div class="firstd">
-            <div onclick="location.href='Index.html';" style="cursor: pointer;" id="main-logo" >
-                
+            <div onclick="location.href='index.html';" style="cursor: pointer;" id="main-logo" >
+              <h1>Ban<span>gg</span>ood</h1>
                 <p>Global leading online shop</p>
-            </div><h1>Ban<span>gg</span>ood</h1>
+            </div>
             <div id="category"> 
                 <p style="font-weight: 700;"><span id="flow-0">≡ </span> CATEGORIES <span id="flow-1"> > </span>  </p> 
             </div>
@@ -229,19 +230,19 @@
           </form>
             
 
-        <div id="tap-in">
-            <img src="https://i.stack.imgur.com/XmWSx.png" alt="">
+          <div id="tap-in">
+            <img  src="https://i.stack.imgur.com/XmWSx.png" alt="">
             <label for="">Hello</label>
-            <a href="">
-            <p>Sign in</p>
+            <a href="signup.html">
+            <p id="sign-in"></p>
             </a>
         </div>
 
       
         <div class="figure">
-            <a href="">
+            <a href="bangcarts.html">
             <img class="image-main" src="Images/Troley.png"  alt=""></a>
-            <a href="">
+            <a href="bangcarts.html">
             <img class="image-hover" src="Images/yeh.jfif"  alt=""></a>
         </div>
       
@@ -249,7 +250,7 @@
 
     </div>
 
-  <table border="1px">
+  <table style="border: 1px;">
     <thead>
       <tr>
         <th>Product</th>
@@ -515,6 +516,12 @@ console.log(inputDate)
 
 
 })
+let boodata=JSON.parse(localStorage.getItem("loginDetail")) || [];
+    if(boodata.length>0){
+        document.querySelector("#sign-in").innerText=boodata[0].email;
+    }else{
+        document.querySelector("#sign-in").innerText="sign-in";
+    }
 
 </script>
 </body>

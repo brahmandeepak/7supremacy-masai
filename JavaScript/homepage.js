@@ -451,9 +451,9 @@ BoderData.map(function(elem){
 
 
 
-    let boodata=JSON.parse(localStorage.getItem("loginDetails")) || [];
+    let boodata=JSON.parse(localStorage.getItem("loginDetail")) || [];
     if(boodata.length>0){
-        document.querySelector("#sign-in").innerText=boodata[0].name;
+        document.querySelector("#sign-in").innerText=boodata[0].email;
     }else{
         document.querySelector("#sign-in").innerText="sign-in";
     }

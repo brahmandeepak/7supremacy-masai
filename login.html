@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login-Page</title>
+    <link rel="icon" href="https://www.banggood.in/favicon.ico" type="image/x-icon" />
     <style>
         body{
         background-color: #f5f5f5;
@@ -116,15 +117,21 @@
 
    document.querySelector("button").addEventListener("click",myFunction)
 
-   function myFunction(){
+   function myFunction(el){
+
+    let accdata=JSON.parse(localStorage.getItem("Userdetails")) || [];
+    accdata.push(el)
+    localStorage.setItem("loginDetail",JSON.stringify(accdata));
+
+
     signinObj={
-    Mail:document.querySelector("#mail").value,
-    Password:document.querySelector("pass").value
+    email:document.querySelector("#mail").value,
+    Password:document.querySelector("#pass").value
    }
    
    let display="Wrong Credential";
    signUpArr.forEach(function(el){
-    if(el.email==signinObj.Mail && el.password==signinObj.Password){
+    if(el.email==signinObj.email && el.password==signinObj.Password){
         display="Login Sucessful";
         window.location.href="index.html";
     }
@@ -133,5 +140,6 @@
 
    }
 
-   
+
 </script>
+

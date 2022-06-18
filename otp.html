@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credential-Data</title>
+    <link rel="icon" href="https://www.banggood.in/favicon.ico" type="image/x-icon" />
+<style>
+    *{
+        font-family:
+"Lucida Console", monospace
+    }
+    #container{
+        width: 30%;
+        height: 250px;
+       padding: 19px;
+        margin: auto;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 10px;
+    }
+    
+    
+    h3{
+        text-align: center;
+    }
+    #otp{
+        margin: auto;
+        width: 19%;
+        height: 40px;
+        margin-left: 190px;
+        font-size: 30px;
+        margin-top: 50px;
+        
+        
+    }
+    #btn{
+        width: 300px;
+        height: 30px;
+        margin-left: 80px;
+        margin-top: 50px;
+        background-color: rgb(82, 82, 231);
+        border-radius: 7px;
+        border: transparent;
+        font-size: 19px;
+    }
+</style>
+
+</head>
+<body>
+    <h1 style="text-align: center;""> <a style=" text-decoration: none; color: black;" href="index.html"> Ban<span style="color: orange;">gg</span>ood</a> </h1>
+    <div id="container" >
+       <form>
+        <h3>OTP is sent to your mobile number</h3>
+        <input type="text" inputmode="numeric" autocomplete="one-time-code" maxlength="4" id="otp"><br>
+        <input id="btn" value="Verify"  type="submit"></input>
+       </form>
+    </div>
+</body>
+</html>
+<script>
+      document.querySelector("form").addEventListener("submit",action)
+ function action(){
+     if(document.querySelector("#otp").value == "1234"){
+         window.location.href="index.html";
+         alert("Payment successfully")
+     }else{
+         alert("Incorrect OTP")
+         
+     }
+ }
+
+</script>

@@ -324,3 +324,10 @@ function showSlides() {
   slides[slideIndex-1].style.display = "block";
   setTimeout(showSlides, 3000); // Change image every 2 seconds
 }
+let boodata=JSON.parse(localStorage.getItem("loginDetail")) || [];
+    if(boodata.length>0){
+        document.querySelector("#sign-in").innerText=boodata[0].email;
+    }else{
+        document.querySelector("#sign-in").innerText="sign-in";
+    }
+
