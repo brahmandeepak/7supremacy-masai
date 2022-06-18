@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add cart Page </title>
+  <link rel="stylesheet" href="stylesachin.css">
+
+  <style>
+    *{
+      margin:0%;
+      padding: 0%;
+      box-sizing: border-box;
+      /* background-color: white; */
+    }
+    table{
+      border-collapse: collapse;
+    width: 95%;
+    margin: auto;
+    text-align: center;
+    border:0px;
+    }
+    table thead{
+    background:#ff6e26 ;
+      
+    color:white;
+    font-size: 20px;
+    /* font-family: system-ui; */
+    font-weight: bold;
+    }
+    table thead th{
+      padding:15px 3px;
+    }
+   table tbody  td{
+      padding: 7px;
+    }
+    img{
+      max-width: 80%;
+    max-height: 84px;
+    cursor: pointer;
+
+    }
+    button{
+      font-size: 20px;
+    padding: 1px 11px;
+    cursor: pointer;
+    }
+    .paymentDetails>span{
+      display: inline-block;
+    margin: 0px 10px;
+    font-size: 25px;
+    }
+    .cuppon{
+      
+      display: flex;
+    justify-content: space-between;
+    width: 35%;
+    margin: auto;
+    margin-top: 50px;
+    align-items: center;
+    /* border: 1px solid red; */
+    position:relative;
+     left:-430px;
+     top:-40px 
+
+    }
+    .price{
+      
+      display: flex;
+    justify-content: space-between;
+    width: 29%;
+    margin: auto;
+    margin-top: 50px;
+    align-items: center;
+    /* border: 1px solid red; */
+    position:relative;
+    right:-460px;
+    top:-80px
+    
+    }
+    .price{
+      margin-top: 0%;
+      /* border: 1px solid gray */
+      
+    }
+    .cuppon button{
+      padding: 5px 10px;
+      font-weight: 600;
+      text-transform: capitalize;
+      background-color: orange;
+      border-radius: 10px;
+
+    }
+    .cuppon input{
+      padding: 8px;
+      font-size: 20px;
+      /* border: none; */
+      
+    }
+    .price h3,.price h4{
+      font-size: 20px;
+      color: #0f1114;
+      margin: 10px 0px;
+    }
+    .nav{
+          display: flex;
+          justify-content: space-between;
+          padding: 16px 12px;
+          background-color: rgb(248, 125, 36);
+          color: white;
+          /* border-radius: 20px; */
+          font-family: sans-serif;
+      }
+      .menus ul{
+          display: flex;
+
+      }
+      .menus ul li{
+          list-style-type: none;
+          color: white;
+          font-size: 20px;
+          margin-left: 30px;
+          text-transform: capitalize;
+          font-family: sans-serif;
+      }
+     .menus ul li a{
+          color: white;
+          text-decoration: none;
+          /* lds  */
+      }
+      .paymentDetails{
+        
+        width: 50%;
+        margin:auto;
+        margin-top: 18px;
+        /* border:1px solid gray; */
+        position:relative;
+    right:-405px;
+    top:-80px
+    
+      }
+      .paymentDetails input:first-child{
+        display: block;
+        margin: 16px 0px;
+      }
+      .inputDetails{
+        margin-top: 10px;
+       
+      }
+      .dateInput{
+        display: flex;
+        margin-top: 10px;
+        /* border: 2px solid green; */
+        justify-content: space-between;
+        width: 45%;
+        align-items: center;
+      }
+      .inputDetails > input{
+
+        padding: 6px 5px;
+      }
+      .dateInput input:first-child{
+        font-size: 23px;
+      }
+      .dateInput input:last-child{
+        width: 75px;
+        padding: 10px 3px;
+        font-size: 20px;
+      }
+      .paymentDetails button{
+        margin: 20px 0px;
+        margin-bottom: 50px;
+        background-color: orange;
+        color: black;
+        font-family: monospace;
+        text-transform: capitalize;
+        /* border: 2px solid gray; */
+        border-radius: 10px;
+      }
+      .paymentDetails h4{
+        font-size: 23px;
+        color:#656d78
+      }
+      .paymentDetails h4 span{
+        color: green;
+        display: inline-block;
+        /* margin-left: 4px; */
+      }
+      .main{
+        box-shadow: 10px 10px 5px gray;
+        /* border: 1px solid red; */
+        
+      }
+  </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="firstd">
+            <div onclick="location.href='Index.html';" style="cursor: pointer;" id="main-logo" >
+                
+                <p>Global leading online shop</p>
+            </div><h1>Ban<span>gg</span>ood</h1>
+            <div id="category"> 
+                <p style="font-weight: 700;"><span id="flow-0">≡ </span> CATEGORIES <span id="flow-1"> > </span>  </p> 
+            </div>
+        </div>
+
+        <div class="center">
+            <div id="search-bar">
+                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="" title="Type in a name">
+            </div>
+            <div id="suggestion">
+                <p>XIOMI</p>
+                <p>GAME</p>
+                <p>TOY CAR</p>
+                <p>REMOTE</p>
+                <p>PHONE</p>
+                <p>CLOTHING</p>
+            </div>
+        </div>
+
+        <div class="left-data">
+            <form action="#" id="language">
+                <label for="" style="color: #656d78;">Ship to</label><br>
+                <select name="LANGUAGE" id="lang" style="color: white;">
+                    <option value="Language">/ English (India) / INR</option>
+                </select>
+          </form>
+            
+
+        <div id="tap-in">
+            <img src="https://i.stack.imgur.com/XmWSx.png" alt="">
+            <label for="">Hello</label>
+            <a href="">
+            <p>Sign in</p>
+            </a>
+        </div>
+
+      
+        <div class="figure">
+            <a href="">
+            <img class="image-main" src="Images/Troley.png"  alt=""></a>
+            <a href="">
+            <img class="image-hover" src="Images/yeh.jfif"  alt=""></a>
+        </div>
+      
+        </div>
+
+    </div>
+
+  <table border="1px">
+    <thead>
+      <tr>
+        <th>Product</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Delete</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- <tr>
+        <td><img src="https://content.shop4reebok.com/static/Product-EX4296/reebok_EX4296_1.jpg.plp" alt=""></td>
+        <td>Name of ther product</td>
+        <td>34394$</td>
+        <td><button> -</button> <span> 0</span> <button>+</button></td>
+        <td> <img src="https://media.istockphoto.com/vectors/garbage-bin-sign-vector-id1139466631?k=20&m=1139466631&s=612x612&w=0&h=F3hOMYdQTDn4NFEi94i9StIbDxJ1v7mX79lDxz1cXLk=" alt=""></td>
+        <td>10$</td>
+      </tr> -->
+      
+    </tbody>
+  </table>
+
+
+  <div class="main">
+    <div class="cuppon">
+      <input type="text" id="cupCode">
+      <button id="button">Apply coupon  code</button>
+    </div>
+    <div class="price">
+      <h3>Total Price</h3> <h3 id="total">0</h3>
+      </div>
+      <div class="price">
+        <h4>Product Length</h4> <h4 id="productLength"> 10</h4>
+      </div>
+    <div class="paymentDetails">
+      <h4>Payment Method Using <span>Credit / Debit / ATM Card</span></h4>
+      <div class="inputDetails">
+        <input type="text" name="name" id="name" placeholder="Enter your Name" required>
+        <input type="number" name="name" id="number" placeholder="Enter your Card Number" required>
+    
+        <div class="dateInput"> 
+          <input type="month" name="month" id="month" placeholder="MM/YYYY" required>
+          <input type="number" name="cvv" id="cvv" placeholder="CVV" required>
+          
+        </div>
+        <button id="payment">Pay<span  id="span"></span></button>
+      </div>
+    </div>
+    </div>
+
+
+
+
+
+
+<div id="footer-beg">
+    <div>
+        <img src="Images/foot-beg.png" alt="">
+    </div>
+    
+</div>
+<!--------------Footer-Beg DONE------------------------------------------------------------> 
+<div class="footer">
+    <div id="first-foot">
+        <p onclick="location.href='Index.html';" style="cursor: pointer;" id="m-logo">Get to Know Us</p><br>
+        <p onclick="location.href='Index.html';" style="cursor: pointer;" id="main-log">Guarantees & Return Policy</p>
+        <p onclick="location.href='Index.html';" style="cursor: pointer;" id="main-log">About Banggood.in</p>
+        <p onclick="location.href='Index.html';" style="cursor: pointer;" id="main-log">Contact Us</p>
+        <p onclick="location.href='Index.html';" style="cursor: pointer;" id="main-log">Help Center</p>
+        <p onclick="location.href='Index.html';" style="cursor: pointer;" id="main-log">Site Map</p>
+        <p onclick="location.href='Index.html';" style="cursor: pointer;" id="main-log">Intellectual Property Claims</p><br><br>
+        <p onclick="location.href='Index.html';" style="cursor: pointer;" id="m-logo">Subscribe</p>
+        <p onclick="location.href='Index.html';" style="cursor: pointer;" id="main-log">By subscribing you agree to receive email from us.<br>Please read our Privacy Policy</p><br><br>
+        <input type="email" name="Email" id="footer-email" placeholder="EMAIL ADDRESS">
+    </div>
+    <div id="second-foot">
+        <p onclick="location.href='Index.html';" style="cursor: pointer;" id="m-logo">Payment & Shipping</p><br>
+        <p onclick="location.href='Index.html';" style="cursor: pointer;" id="main-log">Payment Methods</p>
+        <p onclick="location.href='Index.html';" style="cursor: pointer;" id="main-log">BGpay Instruction</p>
+        <p onclick="location.href='Index.html';" style="cursor: pointer;" id="main-log">Shipping Guide</p>
+        <p onclick="location.href='Index.html';" style="cursor: pointer;" id="main-log">Locations We Ship To</p>
+        <p onclick="location.href='Index.html';" style="cursor: pointer;" id="main-log">Estimated Delivery Time</p><br>
+        <p onclick="location.href='Index.html';" style="cursor: pointer;" id="m-logo">Partnership Programs</p>
+        <p onclick="location.href='Index.html';" style="cursor: pointer;" id="main-log">Drop shipping</p>
+        <p onclick="location.href='Index.html';" style="cursor: pointer;" id="main-log">Review Club</p>
+        <p onclick="location.href='Index.html';" style="cursor: pointer;" id="main-log">Affiliate Program</p>
+        <p onclick="location.href='Index.html';" style="cursor: pointer;" id="main-log">Wholesale Program</p>
+        <p onclick="location.href='Index.html';" style="cursor: pointer;" id="main-log">Fashion Blogger Program</p>
+        
+    </div>
+    <div id="third-foot">
+        <p onclick="location.href='Index.html';" style="cursor: pointer;" id="m-logo">Download App</p><br>
+        <div id="footer-dicon">
+            <img style="height: 50px; width: 50px;" src="https://www.jarir.com/cdn-cgi/image/fit=contain,width=400,height=auto,quality=100,metadata=none/https://wp-media.jarir.com/wp-content/uploads/2021/11/1-Apple-1.png" alt="">
+            <img style="height: 50px; width: 50px;" src="https://obs-tv.com/wp-content/uploads/2019/04/Android-TV-OBS-Icon.png" alt="">
+            <img  style="height: 50px; width: 100px; border-radius: 5px;" src="https://img.freepik.com/free-vector/template-scan-me-qr-code-smartphone-qr-code-mobile-app-payment-phone-viewfinder-grid-focus-button-vector-illustration_288189-324.jpg?w=2000" alt="">
+        </div><br>
+        <p onclick="location.href='Index.html';" style="cursor: pointer;" id="m-logo">Follow Us</p><br>
+        <img style="height: 150px; width: 250px;"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI8c2cStFntFArlkiY0vT0q40H3SY8FBTRqg&usqp=CAU=" alt="">
+        <br>
+        <p onclick="location.href='Index.html';" style="cursor: pointer;" id="main-log">Fashion Blogger Program <br>TERMS  PRIVACY  SPECIALIZED AFFAIRS</p>
+    </div>
+    
+
+
+
+</div>
+<!--------------Footer DONE------------------------------------------------------------>
+<div id="footer-end">
+    <div>
+        <img src="Images/footend.png" alt="">
+    </div>
+</div>
+
+<script>
+  // let count=1;
+  let addToCart=JSON.parse(localStorage.getItem('addToCart')) || [];
+  document.getElementById('productLength').innerText=addToCart.length;
+  function display(addToCart){
+    document.querySelector('tbody').innerHTML='';
+    addToCart.forEach(function(e,i){
+      let tbody=document.querySelector('tbody');
+      let tr=document.createElement('tr');
+      let td=document.createElement('td');
+      let img=document.createElement('img');
+      img.setAttribute('src',e.image_url);
+      td.append(img);
+      let td1=document.createElement('td');
+      td1.innerText=e.name;
+      let td2=document.createElement('td');
+      td2.innerText=e.price;
+      let td3=document.createElement('td');
+      let btn1=document.createElement('button');
+      btn1.innerText='-';
+      let span=document.createElement('span');
+      span.innerText='1';
+      let btn2=document.createElement('button');
+      btn2.innerText='+';
+      td3.append(btn1,span,btn2);
+      let td4=document.createElement('td');
+      let img2=document.createElement('img');
+      img2.setAttribute('src','https://media.istockphoto.com/vectors/garbage-bin-sign-vector-id1139466631?k=20&m=1139466631&s=612x612&w=0&h=F3hOMYdQTDn4NFEi94i9StIbDxJ1v7mX79lDxz1cXLk=')
+      td4.appendChild(img2);
+      img2.addEventListener('click',function(){
+          deleteProduct(e,i)
+      })
+      let td5=document.createElement('td');
+      td5.innerText=e.price;
+      
+      tr.append(td,td1,td2,td3,td4,td5);
+      tbody.appendChild(tr);
+      btn2.addEventListener('click',function(){
+        let acutal=e.price;
+        productQuantityPlus(span,td5,acutal) 
+      })
+      btn1.addEventListener('click',function(){
+        let acutal=e.price;
+        productQuantityMinus(span,td5,acutal)
+      })
+
+    })
+  }
+// delete Product Page 
+function deleteProduct(e,i){
+  addToCart.splice(i,1);
+localStorage.setItem('addToCart',JSON.stringify(addToCart));
+display(addToCart)
+window.location.reload();
+}
+// increase Product quantity 
+let dataArray=[];
+let latestArray=[];
+function productQuantityPlus(span,price,acutalPrice){
+latestArray=dataArray;
+dataArray=[];
+let count=+span.innerText;
+let acutalData=+acutalPrice;
+count++;
+span.innerText=count;
+let prices=count*acutalData;
+price.innerText=prices;
+dataArray.push(prices);
+console.log(prices,count);
+total();
+}
+// decrease product quantity 
+function productQuantityMinus(span,price,acutalPrice){
+let currentPrice=+price.innerText;
+let acutalData=+acutalPrice;
+let count=+span.innerText;
+if(count==1){
+    count=1;
+    span.innerText=count;
+  }
+  else{
+    count--;
+    span.innerText=count;
+  }
+  if(currentPrice==acutalData){
+    price.innerText=acutalData;
+  }
+  else{
+    price.innerText=currentPrice-acutalData;
+  }
+  total();
+  
+  // console.log(currentPrice);
+
+}
+
+// put the total pize of the product 
+function total(){
+// console.log('hello')
+let totalData=document.querySelectorAll('tbody td:last-child');
+let totalPrice=0;
+let priceTag=document.getElementById('total')
+totalData.forEach(function(e){
+ 
+  // console.log(priceTag)
+  let data=+e.innerText
+  console.log(e.innerText);
+  totalPrice+=data;
+  priceTag.innerText=totalPrice;
+  document.getElementById('span').innerText=totalPrice;
+})
+
+}   
+
+
+
+  display(addToCart);
+  total();
+  // apply cuupon code
+document.querySelector('#button').addEventListener('click',applyCupponCode);
+console.log("hello")
+function applyCupponCode(){
+ let input=document.querySelector('input').value;
+ let totals;
+ let totalData=+document.querySelector('#total').innerText;
+ // console.log(totalData)
+ if(input =="sachin30"){    
+    totals= (totalData/100)*70;
+    document.querySelector('#total').innerText=totals;
+  }
+
+}
+// payment gatway 
+document.getElementById('payment').addEventListener('click',function(){
+let cardNumber='123456789';
+let date='2027-01';
+let cvv='123';
+let inputDate=document.getElementById('month').value;
+let inputCard=document.getElementById('number').value;
+let inputCvv=document.getElementById('cvv').value;
+if(inputCard==cardNumber && inputDate==date && cvv==inputCvv){
+  window.location.href='otp.html';
+}
+else{
+  alert('Wrong Details')
+}
+console.log(inputDate)
+
+
+})
+
+</script>
+</body>
+</html>
+
