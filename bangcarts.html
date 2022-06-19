@@ -504,11 +504,18 @@ function applyCupponCode(){
 
  let totals;
  let totalData=+document.querySelector('#total').innerText;
- //console.log(totalData)
- if(input =="sachin30"){    
+ if(document.querySelector('#cupCode').value==''){
+  alert("coupon not applied")
+ }else{
+  if(input =="sachin30"){    
     totals= (totalData/100)*70;
     document.querySelector('#total').innerText=totals;
+    alert("coupon Applied")
+    document.querySelector('#cupCode').value='';
   }
+ }
+ //console.log(totalData)
+ 
 
 }
 // payment gatway 
