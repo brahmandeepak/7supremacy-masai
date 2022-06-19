@@ -1,0 +1,7 @@
+User must enter such thing to make the website in working condition.
+Some important info are:-
+1. Coupon must be "sachin30"
+2. Card Number must be "123456789"
+3. Card Expiry Date must be "January 2027"
+4. cvv must be "123"
+5. OTP should be enter "1234"
