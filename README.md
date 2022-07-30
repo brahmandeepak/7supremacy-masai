@@ -16,4 +16,31 @@
 Home Page
 ![Screenshot (121)](https://user-images.githubusercontent.com/105920461/181870012-746251fc-980d-4f4e-9f18-061683fc637b.png)
 
+Signup Page
+![Screenshot (122)](https://user-images.githubusercontent.com/105920461/181870301-83fb5275-b43b-4d49-b009-6ca4887583c1.png)
+
+Login Page
+![Screenshot (123)](https://user-images.githubusercontent.com/105920461/181870321-4d0c5007-4b67-4670-b1f3-e7bfe2bad21a.png)
+
+Mens's Page
+![Screenshot (124)](https://user-images.githubusercontent.com/105920461/181870337-893a66b5-a166-42d1-bfca-775cc72b918b.png)
+
+Women' Page
+![Screenshot (125)](https://user-images.githubusercontent.com/105920461/181870352-7f6ae455-e3f0-4c7c-aa40-17a768540096.png)
+
+Phones's & Accessories Page
+![Screenshot (129)](https://user-images.githubusercontent.com/105920461/181870473-94890fed-198e-4b80-8526-4ca0232162e0.png)
+
+Electronics Page
+![Screenshot (126)](https://user-images.githubusercontent.com/105920461/181870382-c461cb6d-e5ef-4012-9bd6-f5e4ccbf2cd2.png)
+
+Sports Page
+![Screenshot (127)](https://user-images.githubusercontent.com/105920461/181870410-c4642e5d-7781-42ac-802f-9991ebff888f.png)
+
+Add to Cart & Payment Page
+![Screenshot (128)](https://user-images.githubusercontent.com/105920461/181870427-a7d18547-3579-4c89-ad1d-20302640d8c6.png)
+
+
+
+
 
