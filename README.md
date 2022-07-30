@@ -3,7 +3,7 @@
 
 
 
-- We team 7supremacy-masai recently worked on Clone Project which is a clone of Banggood.com an Ecommerce website  https://admirable-shortbread-cc3902.netlify.app/)
+- We team 7supremacy-masai recently worked on Clone Project which is Banggood.com an Ecommerce website  https://admirable-shortbread-cc3902.netlify.app/)
 
 
 
