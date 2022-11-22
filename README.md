@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, Everyone</h1>
 
 
--Banggood is a global leading direct-to-consumer online retailer,Which deals in every products.
+-Banggood is a global leading direct-to-consumer online retailer,Which deals in every products.<br>
 -We have Completed this project in 5days.
 
 ## Features
