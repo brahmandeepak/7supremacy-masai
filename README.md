@@ -1,6 +1,28 @@
 <h1 align="center">Hi 👋, Everyone</h1>
 
 
+-Banggood is a global leading direct-to-consumer online retailer,Which deals in every products.
+-We have Completed this project in 5days.
+
+## Features
+
+- Signup/Login
+- Sorting & Filtering
+- Payement Feature
+- Dropdown Menu
+- User can apply discount
+
+
+
+
+## Tech Stack
+
+* HTML
+* JAVASCRIPT
+* CSS
+* BootStrap
+
+
 
 
 - We team 7supremacy-masai recently worked on Clone Project which is Banggood.com an Ecommerce website  https://admirable-shortbread-cc3902.netlify.app/)
